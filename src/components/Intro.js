@@ -1,5 +1,4 @@
 import React from "react";
-import { ThemeContextConsumer } from "./ThemeContext";
 
 function Intro() {
   return (

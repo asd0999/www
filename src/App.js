@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "./components/ThemeContext";
 import Intro from "./components/Intro";
+import ProjectList from "./components/ProjectList";
 import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
   return (
     <div className={`${context.theme}-theme container`}>
       <ThemeToggle />
-      <Intro />
+      {/* <Intro /> */}
+      <ProjectList />
     </div>
   );
 }

@@ -82,3 +82,26 @@ body {
 .toggle:focus {
     outline: 0;
 }
+
+.project-container {
+    width: 84%;
+}
+
+.project-card {
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-img-icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border: 1px solid red;
+}
+
+.project-img-icon img {
+    width: 100%;
+}

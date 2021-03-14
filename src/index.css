@@ -32,9 +32,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 800px;
+    width: 1000px;
     height: 100%;
     position: relative;
+    transition: background-color 800ms ease-in-out, color 600ms ease-in;
 }
 
 .toggle-body {
@@ -59,6 +60,7 @@ body {
     position: relative;
     left: 0px;
     border-radius: 4px;
+    transition: left 125ms ease-in;
 }
 
 .light-theme-toggle-switch {

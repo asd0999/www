@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { ThemeContextConsumer } from "./components/ThemeContext";
+import React, { useContext } from "react";
+import { ThemeContext } from "./components/ThemeContext";
 import Intro from "./components/Intro";
 import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
+  const context = useContext(ThemeContext);
   return (
-    <ThemeContextConsumer>
-      {({ theme, toggleTheme }) => (
-        <div className={`${theme}-theme container`}>
-          <Intro />
-          <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-        </div>
-      )}
-    </ThemeContextConsumer>
+    <div className={`${context.theme}-theme container`}>
+      <ThemeToggle />
+      <Intro />
+    </div>
   );
 }
 

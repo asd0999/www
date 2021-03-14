@@ -1,15 +1,13 @@
 import React from "react";
-import Project from "./Project";
+import ProjectListItem from "./ProjectListItem";
 
-function ProjectList() {
-  const items = ["Project 1", "Project 2", "Project 3"];
-
+function ProjectList(props) {
   return (
     <div className="project-container">
       <h1>Projects :</h1>
       {/* <ul> */}
-      {items.map((item, index) => {
-        return <Project key={index} item={item} />;
+      {props.projectsJSON.map((item, index) => {
+        return <ProjectListItem key={index} content={item} />;
       })}
       {/* </ul> */}
     </div>

@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "./components/ThemeContext";
+import ThemeToggle from "./components/ThemeToggle";
 import Intro from "./components/Intro";
 import ProjectList from "./components/ProjectList";
-import ThemeToggle from "./components/ThemeToggle";
+import ProjectPage from "./components/ProjectPage";
 
 const items = [
   "Project 1",
@@ -27,9 +28,9 @@ function App() {
   return (
     <div className={`${context.theme}-theme container`}>
       <ThemeToggle />
-      {/* <Intro /> */}
-      <ProjectList projectsJSON={projectsJSON} />
-      {/* <Project /> */}
+      <Intro />
+      {/* <ProjectList projectsJSON={projectsJSON} /> */}
+      {/* <ProjectPage /> */}
     </div>
   );
 }

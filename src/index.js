@@ -3,13 +3,17 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
 import { ThemeContextProvider } from "./components/ThemeContext";
+import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeContextProvider>
-      <App />
-    </ThemeContextProvider>{" "}
+    <Router>
+      <ThemeContextProvider>
+        <App />
+      </ThemeContextProvider>{" "}
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );

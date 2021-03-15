@@ -38,6 +38,13 @@ body {
     transition: background-color 800ms ease-in-out, color 600ms ease-in;
 }
 
+.header {
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .toggle-body {
     border: 1px 1px solid black;
     padding: 0px;
@@ -46,9 +53,9 @@ body {
     height: 24px;
     border-radius: 4px;
     box-shadow: 0px 1px 1px grey;
-    position: absolute;
+    /* position: absolute;
     top: 18px;
-    right: 20px;
+    right: 20px; */
 }
 
 .toggle-switch {
@@ -93,7 +100,7 @@ body {
 
 .project-container {
     width: 84%;
-    margin-top: 120px;
+    margin-top: 40px;
 }
 
 .project-card {
@@ -104,6 +111,11 @@ body {
     padding: 4px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.link-underline {
+    text-decoration: inherit !important;
+    color: inherit !important;
 }
 
 .project-card:hover {
@@ -174,4 +186,8 @@ a {
     /* text-decoration: none; */
     color: inherit !important;
     cursor: pointer;
+}
+
+.breadcrumb-links {
+    font-weight: 400;
 }

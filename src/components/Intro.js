@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Intro() {
   return (
@@ -7,7 +8,7 @@ function Intro() {
         Hi, my name is Tushar<p>This is my portfolio website</p>
       </h1>{" "}
       <h1>
-        <a href="#">Projects</a>
+        <Link to="/projects">click to see projects</Link>
       </h1>
     </div>
   );

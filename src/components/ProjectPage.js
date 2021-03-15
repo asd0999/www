@@ -1,12 +1,21 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 function ProjectPage(props) {
+  const { projectname } = useParams();
+
   return (
     <div className="project-container">
       <div className="project-text-heading-container">
-        <h1> Title - something something </h1>{" "}
+        <h1> Title - {projectname} </h1>{" "}
         <h2 className="project-link-external">
-          <a href="#">Livesite</a> | <a href="#">GitHub</a>
+          <a href="#" target="_blank">
+            Livesite
+          </a>{" "}
+          |{" "}
+          <a href="#" target="_blank">
+            GitHub
+          </a>
         </h2>
       </div>
       <div className="projectpage-text-tech">

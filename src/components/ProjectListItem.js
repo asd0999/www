@@ -18,7 +18,7 @@ function ProjectListItem(props) {
         <div className="project-text-listitem">
           <div>
             <h2> {title} </h2>
-            <div className="projectpage-text-tech">{techStack}</div>
+            <div className="project-text-tech">{techStack}</div>
           </div>
           <p className="project-text-blurb">{blurb}</p>{" "}
         </div>{" "}

@@ -25,7 +25,7 @@ function ProjectPage() {
 
   return (
     <div className="project-container">
-      <div className="project-text-heading-container">
+      <div className="projectpage-text-heading-container">
         <div>
           <h1> {content.title} </h1>{" "}
           <div className="projectpage-text-tech">{content.techStack}</div>

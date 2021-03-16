@@ -91,6 +91,11 @@ body {
     outline: 0;
 }
 
+.intro-typewriter {
+    height: 124px;
+    /* width: 20ch; */
+}
+
 .dark-theme-button {
     background-color: var(--dark-text);
     color: var(--light-text);
@@ -110,6 +115,7 @@ body {
 }
 
 .intro {
+    width: 54ch;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -137,7 +143,7 @@ body {
 }
 
 .project-card:hover {
-    box-shadow: 1px 2px 4px rgb(151, 150, 150);
+    box-shadow: 1px 2px 4px #979696;
 }
 
 .project-img-icon {
@@ -161,7 +167,7 @@ body {
 
 .project-link-external {
     position: relative;
-    top: -12px;
+    top: -10px;
 }
 
 .project-text-external-link a {

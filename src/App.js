@@ -8,18 +8,10 @@ import ProjectList from "./components/ProjectList";
 import ProjectPage from "./components/ProjectPage";
 import Header from "./components/Header";
 
-const items = [
-  "Project1",
-  "Project2",
-  "Project3",
-  "Project4",
-  "Project5",
-  "Project6",
-];
-
 function App() {
   const [projects, setProjects] = useState([]);
   const context = useContext(ThemeContext);
+  const [scrollRan, setScrollRan] = useState(false);
 
   useEffect(() => {
     client
@@ -31,6 +23,10 @@ function App() {
       .catch((error) => {
         console.log(error);
       });
+
+    setTimeout(() => {
+      setScrollRan(true);
+    }, 10000);
   }, []);
 
   return (
@@ -38,7 +34,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/">
-          <Intro />
+          <Intro scrollRan={scrollRan} />
         </Route>
         <Route exact path="/projects">
           <ProjectList projects={projects} />

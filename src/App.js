@@ -17,7 +17,7 @@ function App() {
     client
       .getEntries()
       .then((response) => {
-        console.log(response.items);
+        // console.log(response.items);
         setProjects(response.items);
       })
       .catch((error) => {

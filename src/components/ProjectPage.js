@@ -15,7 +15,7 @@ function ProjectPage() {
     client
       .getEntry(projectId)
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         setContent(response.fields);
       })
       .catch((error) => {
@@ -26,8 +26,11 @@ function ProjectPage() {
   return (
     <div className="project-container">
       <div className="project-text-heading-container">
-        <h1> {content.title} </h1>{" "}
         <div>
+          <h1> {content.title} </h1>{" "}
+          <div className="projectpage-text-tech">{content.techStack}</div>
+        </div>
+        <div className="projectpage-text-link-external-container">
           {content.livesiteUrl && (
             <a href={content.livesiteUrl} target="_blank">
               <button className={`${context.theme}-theme-button link-button`}>
@@ -42,7 +45,6 @@ function ProjectPage() {
           </a>
         </div>
       </div>
-      <div className="projectpage-text-tech">{content.techStack}</div>
       <h4 className="projectpage-text-intro">{content.elevatorPitch}</h4>
       {/* <div className="project-img-feature"> */}
       {content.featureImage && (

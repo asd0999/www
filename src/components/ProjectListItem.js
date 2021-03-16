@@ -5,8 +5,6 @@ function ProjectListItem(props) {
   const { title, thumbnail, blurb, techStack } = props.project.fields;
   const projectId = props.project.sys.id;
 
-  // console.log();
-
   return (
     <Link to={`/projects/${projectId}`} className="link-underline">
       <div className="project-card">

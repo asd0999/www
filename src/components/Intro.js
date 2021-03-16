@@ -26,7 +26,7 @@ function Intro(props) {
             textStyle={{
               fontSize: "40px",
             }}
-            startDelay={5000}
+            startDelay={3600}
             cursorColor="#979696"
             hideCursorAfterText={true}
             text="I'm a full stack developer"

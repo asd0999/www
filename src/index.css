@@ -311,12 +311,70 @@ a {
 }
 
 @media only screen and (max-width: 500px) and (min-width: 401px) {
+    .project-card {
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+    .project-text-listitem {
+        justify-content: space-evenly;
+        height: 80px;
+    }
+    .project-img-icon {
+        width: 100px;
+        height: 100px;
+    }
+    .project-img-icon img {
+        width: 80px;
+        height: 80px;
+    }
+    .projectpage-text-tech {
+        display: none;
+    }
+    .project-text-listitem h2 {
+        margin-top: 0px;
+        margin-bottom: 8px;
+        font-size: 1.3em;
+    }
+    .project-text-listitem p {
+        font-weight: 400;
+        margin: 0px;
+        font-size: 0.8em;
+    }
     .intro-typewriter {
         font-size: 32px !important;
     }
 }
 
 @media only screen and (max-width: 400px) {
+    .project-card {
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+    .project-text-listitem {
+        justify-content: space-evenly;
+        height: 80px;
+    }
+    .project-img-icon {
+        width: 100px;
+        height: 100px;
+    }
+    .project-img-icon img {
+        width: 80px;
+        height: 80px;
+    }
+    .projectpage-text-tech {
+        display: none;
+    }
+    .project-text-listitem h2 {
+        margin-top: 0px;
+        margin-bottom: 8px;
+        font-size: 1.3em;
+    }
+    .project-text-listitem p {
+        font-weight: 400;
+        margin: 0px;
+        font-size: 0.8em;
+    }
     .intro-typewriter {
         font-size: 24px !important;
     }

@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import TypeWriterEffect from "react-typewriter-effect";
 
 function Intro(props) {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+    console.log(windowWidth);
+  }, []);
+
+  const getSize = () => {
+    if (windowWidth >= 1000) return "44px";
+    if (windowWidth >= 600) return "42px";
+    if (windowWidth >= 500) return "36px";
+    if (windowWidth >= 400) return "32px";
+    return "24px";
+  };
   return (
     <div className="intro">
       {props.scrollRan === true ? (
-        <h1 className="intro-typewriter" style={{ fontSize: "44px" }}>
+        <h1 className="intro-typewriter" style={{ fontSize: getSize() }}>
           Hi, my name is Tushar
           <br />
           I'm a full stack developer
@@ -14,7 +28,7 @@ function Intro(props) {
         <h1 className="intro-typewriter">
           <TypeWriterEffect
             textStyle={{
-              fontSize: "44px",
+              fontSize: getSize(),
             }}
             startDelay={1000}
             cursorColor="#979696"
@@ -24,7 +38,7 @@ function Intro(props) {
           />
           <TypeWriterEffect
             textStyle={{
-              fontSize: "44px",
+              fontSize: getSize(),
             }}
             startDelay={3600}
             cursorColor="#979696"

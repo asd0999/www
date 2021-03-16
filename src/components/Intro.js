@@ -5,7 +5,7 @@ function Intro(props) {
   return (
     <div className="intro">
       {props.scrollRan === true ? (
-        <h1 className="intro-typewriter" style={{ fontSize: "40px" }}>
+        <h1 className="intro-typewriter" style={{ fontSize: "44px" }}>
           Hi, my name is Tushar
           <br />
           I'm a full stack developer
@@ -14,7 +14,7 @@ function Intro(props) {
         <h1 className="intro-typewriter">
           <TypeWriterEffect
             textStyle={{
-              fontSize: "40px",
+              fontSize: "44px",
             }}
             startDelay={1000}
             cursorColor="#979696"
@@ -24,7 +24,7 @@ function Intro(props) {
           />
           <TypeWriterEffect
             textStyle={{
-              fontSize: "40px",
+              fontSize: "44px",
             }}
             startDelay={3600}
             cursorColor="#979696"

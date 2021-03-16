@@ -71,7 +71,7 @@ body {
 
 .light-theme-toggle-switch {
     /* border: 1px solid var(--dark-background); */
-    margin-top: 3px;
+    margin-top: 2px;
     background-color: var(--dark-background);
 }
 

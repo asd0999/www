@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import { ThemeContext } from "./ThemeContext";
 
 function ThemeToggle() {
-  const [position, setPosition] = useState(0);
+  const [position, setPosition] = useState(1);
 
   function changePosition() {
-    setPosition((prevPosition) => (prevPosition === 0 ? 22 : 0));
+    setPosition((prevPosition) => (prevPosition === 1 ? 23 : 1));
   }
 
   const context = useContext(ThemeContext);

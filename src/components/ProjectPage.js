@@ -32,7 +32,11 @@ function ProjectPage() {
         </div>
         <div className="projectpage-text-link-external-container">
           {content.livesiteUrl && (
-            <a href={content.livesiteUrl} target="_blank">
+            <a
+              href={content.livesiteUrl}
+              target="_blank"
+              style={{ marginBottom: "4px" }}
+            >
               <button className={`${context.theme}-theme-button link-button`}>
                 <h2 className="project-link-external">Live Site</h2>
               </button>
@@ -45,8 +49,7 @@ function ProjectPage() {
           </a>
         </div>
       </div>
-      <h4 className="projectpage-text-intro">{content.elevatorPitch}</h4>
-      {/* <div className="project-img-feature"> */}
+      <div className="projectpage-text-intro">{content.elevatorPitch}</div>
       {content.featureImage && (
         <img
           src={content.featureImage.fields.file.url}
@@ -54,7 +57,6 @@ function ProjectPage() {
           className="project-img-feature"
         />
       )}{" "}
-      {/* </div> */}
       <div
         className="projectpage-text-more"
         dangerouslySetInnerHTML={{ __html: content.description }}

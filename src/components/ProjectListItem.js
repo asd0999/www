@@ -12,9 +12,11 @@ function ProjectListItem(props) {
           <img src={thumbnail.fields.file.url} />
         </div>{" "}
         <div className="project-text-listitem">
-          <h2> {title} </h2>
-          <div className="projectpage-text-tech">{techStack}</div>
-          <p>{blurb}</p>{" "}
+          <div>
+            <h2> {title} </h2>
+            <div className="projectpage-text-tech">{techStack}</div>
+          </div>
+          <p className="project-text-blurb">{blurb}</p>{" "}
         </div>{" "}
       </div>
     </Link>

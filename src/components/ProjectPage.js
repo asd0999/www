@@ -35,16 +35,16 @@ function ProjectPage() {
             <a
               href={content.livesiteUrl}
               target="_blank"
-              style={{ marginBottom: "4px" }}
+              style={{ marginBottom: "10px" }}
             >
               <button className={`${context.theme}-theme-button link-button`}>
-                <h2 className="project-link-external">Live Site</h2>
+                Live Site
               </button>
             </a>
           )}
           <a href={content.githubUrl} target="_blank">
             <button className={`${context.theme}-theme-button link-button`}>
-              <h2 className="project-link-external">GitHub</h2>
+              GitHub
             </button>
           </a>
         </div>

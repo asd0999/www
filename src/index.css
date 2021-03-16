@@ -105,9 +105,14 @@ body {
 .link-button {
     margin-left: 12px;
     width: 120px;
-    height: 36px;
+    height: 28px;
     border-radius: 4px;
     border: none;
+    font-size: 20px;
+}
+
+.link-button h2 {
+    margin-top: 10px;
 }
 
 .intro {
@@ -163,7 +168,7 @@ body {
 .project-text-heading-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .project-text-blurb {
@@ -173,15 +178,17 @@ body {
 .projectpage-text-link-external-container {
     display: flex;
     flex-direction: column;
+    padding-bottom: 4px;
+}
+
+.projectpage-text-link-external-container a {
+    height: 28px;
+    /* border: 1px solid red; */
 }
 
 .project-link-external {
     position: relative;
     top: -10px;
-}
-
-.project-text-external-link a {
-    color: inherit;
 }
 
 .project-img-feature {

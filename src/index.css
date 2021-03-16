@@ -142,7 +142,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    padding: 4px;
+    padding: 8px;
     border-radius: 4px;
     cursor: pointer;
     border: 2px solid rgba(0, 0, 0, 0);
@@ -285,14 +285,16 @@ a {
 @media only screen and (max-width: 600px) and (min-width: 500px) {
     .project-card {
         align-items: flex-start;
-        margin-bottom: 0px;
+        margin-bottom: 16px;
+        height: 80px;
+        padding: 4px;
     }
     .project-text-listitem {
         justify-content: space-evenly;
         height: 80px;
     }
     .project-img-icon {
-        width: 100px;
+        width: 80;
         height: 100px;
     }
     .project-img-icon img {
@@ -320,7 +322,9 @@ a {
 @media only screen and (max-width: 500px) and (min-width: 401px) {
     .project-card {
         align-items: flex-start;
-        margin-bottom: 0px;
+        margin-bottom: 16px;
+        height: 80px;
+        padding: 4px;
     }
     .project-text-listitem {
         justify-content: space-evenly;
@@ -355,7 +359,9 @@ a {
 @media only screen and (max-width: 400px) {
     .project-card {
         align-items: flex-start;
-        margin-bottom: 0px;
+        margin-bottom: 16px;
+        height: 80px;
+        padding: 4px;
     }
     .project-text-listitem {
         justify-content: space-evenly;
@@ -383,6 +389,6 @@ a {
         font-size: 0.8em;
     }
     .intro-typewriter {
-        font-size: 24px !important;
+        font-size: 22px !important;
     }
 }

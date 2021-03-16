@@ -14,7 +14,7 @@ function Intro(props) {
     if (windowWidth >= 600) return "42px";
     if (windowWidth >= 500) return "36px";
     if (windowWidth >= 400) return "32px";
-    return "24px";
+    return "22px";
   };
   return (
     <div className="intro">

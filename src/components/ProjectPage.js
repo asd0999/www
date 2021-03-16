@@ -10,7 +10,7 @@ function ProjectPage() {
   const { projectId } = useParams();
 
   useEffect(() => {
-    console.log(projectId);
+    // console.log(projectId);
 
     client
       .getEntry(projectId)

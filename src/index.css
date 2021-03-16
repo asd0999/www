@@ -202,12 +202,6 @@ body {
     font-weight: 400;
 }
 
-.project-text-heading-container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
 .projectpage-text-tech {
     color: rgb(154, 154, 154);
     margin-top: -15px;

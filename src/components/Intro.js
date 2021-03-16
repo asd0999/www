@@ -5,11 +5,11 @@ function Intro() {
   return (
     <div className="intro">
       <h1>
-        Hi, my name is Tushar<p>This is my portfolio website</p>
+        Hi, my name is Tushar<p>I'm a full stack developer</p>
       </h1>{" "}
-      <h1>
+      {/* <h1>
         <Link to="/projects">click to see projects</Link>
-      </h1>
+      </h1> */}
     </div>
   );
 }

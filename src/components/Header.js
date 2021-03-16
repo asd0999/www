@@ -11,22 +11,24 @@ function Header() {
     history.goBack();
   };
 
-  const showLocay = () => {
-    console.log(pathname);
-  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="header">
-      {pathname === "/" ? (
-        <h2>Hello!</h2>
-      ) : (
-        <h2 className="breadcrumb-links">
-          / <Link to="/">home</Link> /{" "}
-          <a style={{ textDecoration: "underline" }} onClick={goBack}>
-            back
-          </a>
-        </h2>
-      )}
+      <h2 className="breadcrumb-links">
+        {pathname === "/" ? (
+          <Link to="/projects">projects</Link>
+        ) : (
+          <>
+            / <Link to="/">home</Link> /{" "}
+            <a style={{ textDecoration: "underline" }} onClick={goBack}>
+              back
+            </a>
+          </>
+        )}
+      </h2>
       <ThemeToggle />
     </div>
   );

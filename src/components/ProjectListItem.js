@@ -2,19 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function ProjectListItem(props) {
+  const { title, thumbnail, blurb, techStack } = props.project.fields;
+  const projectId = props.project.sys.id;
+
+  // console.log();
+
   return (
-    <Link to={`/projects/${props.content}`} className="link-underline">
+    <Link to={`/projects/${projectId}`} className="link-underline">
       <div className="project-card">
         <div className="project-img-icon">
-          <img src="#" />
+          <img src={thumbnail.fields.file.url} />
         </div>{" "}
-        <div className="project-text">
-          <h2> {props.content} </h2>{" "}
-          <p>
-            some text about the project, what it is and what it does etc.take
-            from resume or from the older content. just trying to test with this
-            dummy text
-          </p>{" "}
+        <div className="project-text-listitem">
+          <h2> {title} </h2>
+          <div className="projectpage-text-tech">{techStack}</div>
+          <p>{blurb}</p>{" "}
         </div>{" "}
       </div>
     </Link>

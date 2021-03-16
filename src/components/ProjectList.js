@@ -5,11 +5,9 @@ function ProjectList(props) {
   return (
     <div className="project-container">
       <h1>Projects :</h1>
-      {/* <ul> */}
-      {props.projectsJSON.map((item, index) => {
-        return <ProjectListItem key={index} content={item} />;
+      {props.projects.map((project, index) => {
+        return <ProjectListItem key={index} project={project} />;
       })}
-      {/* </ul> */}
     </div>
   );
 }

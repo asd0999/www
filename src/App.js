@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "./components/ThemeContext";
 import { Switch, Route } from "react-router-dom";
 
-import ThemeToggle from "./components/ThemeToggle";
+import client from "./client";
 import Intro from "./components/Intro";
 import ProjectList from "./components/ProjectList";
 import ProjectPage from "./components/ProjectPage";
@@ -18,28 +18,32 @@ const items = [
 ];
 
 function App() {
-  const [projectsJSON, setProjectsJSON] = useState([]);
+  const [projects, setProjects] = useState([]);
   const context = useContext(ThemeContext);
 
   useEffect(() => {
-    // fetch("url")
-    //   .then((data) => data.json())
-    //   .then((json) => setProjects(json));
-    setProjectsJSON(items);
+    client
+      .getEntries()
+      .then((response) => {
+        console.log(response.items);
+        setProjects(response.items);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
 
   return (
     <div className={`${context.theme}-theme container`}>
       <Header />
-      {/* <ThemeToggle /> */}
       <Switch>
         <Route exact path="/">
           <Intro />
         </Route>
         <Route exact path="/projects">
-          <ProjectList projectsJSON={projectsJSON} />
+          <ProjectList projects={projects} />
         </Route>
-        <Route path="/projects/:projectname">
+        <Route path="/projects/:projectId">
           <ProjectPage />
         </Route>
       </Switch>

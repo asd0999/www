@@ -15,7 +15,7 @@ window.env = {
   "npm_config_usage": "",
   "npm_config_audit": "true",
   "NODE": "/Users/AKG/.nvm/versions/node/v14.11.0/bin/node",
-  "npm_package_homepage": "https://asd0999.github.io/www/",
+  "npm_package_homepage": "https://obelixotic.github.io/www/",
   "NVM_CD_FLAGS": "",
   "INIT_CWD": "/Users/AKG/girgit/portfolio/www",
   "npm_config_globalignorefile": "/Users/AKG/.nvm/versions/node/v14.11.0/etc/npmignore",
